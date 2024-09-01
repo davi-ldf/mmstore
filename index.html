@@ -3,36 +3,58 @@
 <head>
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <title>Feedback Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
 
-    
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dak00000BgYzs" method="POST">
-    
-    <input type=hidden name="oid" value="00Dak00000BgYzs">
-    <input type=hidden name="retURL" value="http://">
-    
-    <!--  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail"                                  -->
-    <!--  value="davifranca135@gmail.com">                                        -->
-    <!---->
-    
-    ID do Pedido:<input  id="00Nak000004iKf3" name="00Nak000004iKf3" size="20" type="text" /><br>
-    
-    Nota em Estrelas ⭐:<select  id="00Nak000004iHcM" name="00Nak000004iHcM" title="Stars"><option value="">-- Nenhum --</option><option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    </select><br>
-    
-    <input type="submit" name="submit">
-    
-    </form>
+    <div class="container">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dak00000BgYzs" method="POST">
+        
+            <input type=hidden name="oid" value="00Dak00000BgYzs">
+            <input type=hidden name="retURL" value="http://">
+        
+        <!--  -->
+        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+        <!--  these lines if you wish to test in debug mode.                          -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail"                                  -->
+        <!--  value="davifranca135@gmail.com">                                        -->
+        <!---->
+        <fieldset>
+            <label for="first_name">Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+        </fieldset>
 
+        <fieldset>
+            <label for="last_name">Sobrenome (Opcional)</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="email">Email (Opcional)</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+        </fieldset>
+
+        <fieldset>
+            ID do Pedido (Ex: 001):<input  id="00Nak000004iKf3" name="00Nak000004iKf3" size="20" type="text" /><br>
+
+        </fieldset>
+        <fieldset>
+            Nota em Estrelas ⭐:<select  id="00Nak000004iHcM" name="00Nak000004iHcM" title="Stars"><option value="">-- Nenhum --</option><option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </fieldset>
+            
+            <input type="submit" name="submit">
+        
+        </form>
+    </div>
+
+    <div class="footer">
+
+    </div>
 </body>
 </html>
     
